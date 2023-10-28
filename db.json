@@ -1,0 +1,25 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Addidas",
+      "count": 150,
+      "price": 2.25,
+      "rating": 3.75
+    },
+    {
+      "id": 3,
+      "title": "Rebook",
+      "count": 75,
+      "price": 12,
+      "rating": 1.33
+    },
+    {
+      "id": 4,
+      "title": "Balenciaga",
+      "count": 75,
+      "price": 99,
+      "rating": 4.8
+    }
+  ]
+}

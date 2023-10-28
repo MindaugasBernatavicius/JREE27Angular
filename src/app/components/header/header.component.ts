@@ -25,7 +25,11 @@ import { Component } from '@angular/core';
             <a class="nav-link" [routerLink]="['/directives-examples']">Directives Examples</a>
           </li>
           <li [routerLinkActive]="['active']" class="nav-item">
+            <a class="nav-link" [routerLink]="['/lifecycle-methods-examples']">Lifecycle Methods Examples</a>
+          </li>
+          <li [routerLinkActive]="['active']" class="nav-item">
             <a class="nav-link" [routerLink]="['/about']">About</a>
+
           </li>
         </ul>
       </div>

@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 
     <hr>
     <p *ngIf="showMsg">{{ counter }}</p>
-    <button (click)="incrementCounter()" class="btn btn-outline-primary">
+    <button (click)="incrementCounter($event)" class="btn btn-outline-primary">
       Counter++
     </button>
     &nbsp;
@@ -29,7 +29,8 @@ export class DatabindingComponent {
   showMsg = true;
   text = ``
 
-  incrementCounter(): void {
+  incrementCounter($event: MouseEvent): void {
+    console.log($event);
     this.counter += 1;
   }
 
