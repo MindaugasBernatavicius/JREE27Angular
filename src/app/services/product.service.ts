@@ -3,9 +3,7 @@ import { IProduct } from '../models/IProduct';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable({ providedIn: 'root' })
 export class ProductService {
   productsUrl = `http://localhost:3000/products`
 
@@ -19,6 +17,16 @@ export class ProductService {
   getProductById(id: number): Observable<IProduct> {
     // curl -X GET http://localhost:3000/products/2
     return this.httpClient.get<IProduct>(`${this.productsUrl}/${id}`);
+  }
+
+  deleteProductById(id: number): Observable<Object> {
+    // curl -X DELETE http://localhost:3000/products/2
+    return this.httpClient.delete<Object>(`${this.productsUrl}/${id}`);
+  }
+
+  createProduct(product: IProduct): Observable<Object> {
+    // curl -X POST http://localhost:3000/products + data
+    return this.httpClient.post<Object>(`${this.productsUrl}`, product);
   }
 }
 

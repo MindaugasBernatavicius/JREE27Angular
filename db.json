@@ -21,5 +21,11 @@
       "price": 99,
       "rating": 4.8
     }
+  ],
+  "users": [
+    {
+      "id": 0,
+      "name": "Mindaugas"
+    }
   ]
 }

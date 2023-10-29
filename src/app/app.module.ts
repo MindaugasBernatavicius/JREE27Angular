@@ -30,6 +30,7 @@ import { StarComponent } from './components/star/star.component';
     BrowserModule,
     FormsModule,
     HttpClientModule,
+    FormsModule,
     RouterModule.forRoot([
       // localhost:4200/home --> load the HomeComponent
       { path: 'home', component: HomeComponent },
